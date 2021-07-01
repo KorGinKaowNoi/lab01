@@ -5,7 +5,9 @@ const app = Vue.createApp({
             description: "this is the shoes for me.",
             image: "./assets/images/socks_green.jpg",
             in_stock:true,
-            inventory:100
+            inventory:100,
+            on_sale:true,
+            details:["50% cotton","30% wool","20% polyester"]
         }
     }
 });
