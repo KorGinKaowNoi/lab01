@@ -21,7 +21,8 @@
                 <div class="product-info">
                     <h1><a v-bind:href="`https://www.camt.cmu.ac.th/index.php/th/`">{{product}}</a></h1>
                     <h3> {{description}}</h3>
-                    <p v-if="in_stock">in stock</p>
+                    <p v-if="inventory >10">in stock</p>
+                    <p v-else-if="inventory <=50 && inventory>0">in stock</p>
                     <p v-else>out of stock</p>
                     
                 </div>
