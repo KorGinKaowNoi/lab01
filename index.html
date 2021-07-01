@@ -28,6 +28,8 @@
                     <ul>
                         <li v-for="d in details">{{d}}</li>
                     </ul>
+                    <div v-if="on_sale">this item is on sale</div>
+                    <div v-else>this item is not on sale</div>
                     <span v-for="s in size">{{s}} <tab></span>
                     <div v-for="variant in variants" :key="variant.id" @mouseover="update_image(variant.image)">{{variant.color}}</div>
                     <button class="button" @click="add_to_cart">add to cart</button>
